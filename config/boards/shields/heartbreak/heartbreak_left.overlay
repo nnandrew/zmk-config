@@ -32,4 +32,6 @@
 
 &left_encoder {
 	status = "okay";
+	a-gpios = <&gpio1 13 GPIO_PULL_UP>;
+	b-gpios = <&gpio1 15 GPIO_PULL_UP>;
 };
