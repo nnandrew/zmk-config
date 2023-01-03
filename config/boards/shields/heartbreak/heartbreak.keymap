@@ -3,7 +3,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
+// #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
 #define default_layer 0
 #define num_layer     1
@@ -53,22 +53,22 @@
 	&kp C_NEXT		&kp F7		&kp F8			&kp F9		&kp F10								&trans		&trans			&trans			&trans			&trans
 	&mt LALT C_PP	&kp F4		&kp F5			&kp F6		&kp F11								&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3
 	&kp C_PREV		&kp F1		&kp F2			&kp F3		&kp F12								&trans		&trans			&trans			&trans			&trans
-	&kp C_MUTE		&kp LWIN	&mt LCTRL ESC	&lt 4 SPACE	&lt 1 TAB	&mo 3			&mo 3	&lt 3 BSPC	&mt LSHIFT RET	&mt LALT DEL	&kp RWIN		&kp LA(F4)
+	&kp C_MUTE		&kp LWIN	&bootloader		&reset		&lt 1 TAB	&mo 3			&mo 3	&lt 3 BSPC	&mt LSHIFT RET	&mt LALT DEL	&kp RWIN		&kp LA(F4)
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
 		};	
 
-		test_layer {
-			bindings = <
-	&rgb_ug RGB_EFF	&rgb_ug RGB_SPD &rgb_ug RGB_SPI	&rgb_ug RGB_HUD	&rgb_ug RGB_HUI						&trans		&trans			&trans			&trans			&trans
-	&bt BT_CLR		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3						&trans		&trans			&trans			&trans			&trans
-	&rgb_ug RGB_TOG	&rgb_ug RGB_BRD	&rgb_ug RGB_BRI	&rgb_ug RGB_SAD	&rgb_ug RGB_SAI						&trans		&trans			&trans			&trans			&trans
-	&kp C_MUTE		&kp LWIN		&mt LCTRL ESC	&lt 4 SPACE		&lt 1 TAB	&mo 3			&mo 3	&lt 3 BSPC	&mt LSHIFT RET	&mt LALT DEL	&kp RWIN		&kp LA(F4)
-			>;
+	// 	test_layer {
+	// 		bindings = <
+	// &rgb_ug RGB_EFF	&rgb_ug RGB_SPD &rgb_ug RGB_SPI	&rgb_ug RGB_HUD	&rgb_ug RGB_HUI						&trans		&trans			&trans			&trans			&trans
+	// &bt BT_CLR		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3						&trans		&trans			&trans			&trans			&trans
+	// &rgb_ug RGB_TOG	&rgb_ug RGB_BRD	&rgb_ug RGB_BRI	&rgb_ug RGB_SAD	&rgb_ug RGB_SAI						&trans		&trans			&trans			&trans			&trans
+	// &kp C_MUTE		&kp LWIN		&mt LCTRL ESC	&lt 4 SPACE		&lt 1 TAB	&mo 3			&mo 3	&lt 3 BSPC	&mt LSHIFT RET	&mt LALT DEL	&kp RWIN		&kp LA(F4)
+	// 		>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
-		};
+	// 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
+	// 	};
 
 	};
 };
