@@ -3,10 +3,6 @@
 
 #include "heartbreak.dtsi"
 
-&default_transform {
-	col-offset = <6>;
-};
-
 / {
 	chosen {
 		zmk,kscan = &kscan;
@@ -36,4 +32,8 @@
 
 &right_encoder {
 	status = "okay";
+};
+
+&default_transform {
+	col-offset = <6>;
 };

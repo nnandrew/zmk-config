@@ -1,3 +1,6 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
 if SHIELD_HEARTBREAK_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -6,11 +9,11 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
-endif
+endif # SHIELD_HEARTBREAK_LEFT
 
 if SHIELD_HEARTBREAK_LEFT || SHIELD_HEARTBREAK_RIGHT
 
 config ZMK_SPLIT
 	default y
 
-endif
+endif # SHIELD_HEARTBREAK_LEFT || SHIELD_HEARTBREAK_RIGHT
