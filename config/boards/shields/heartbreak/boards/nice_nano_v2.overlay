@@ -1,20 +1,9 @@
 #include <dt-bindings/led/led.h>
 
 
-nice_view_spi: &spi0 {
-	compatible = "nordic,nrf-spim";
-	sck-pin = <20>;
+&nice_view_spi{
 	mosi-pin = <22>;
-	miso-pin = <25>;
 	cs-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
-	nice_view: ls0xx@0 {
-		compatible = "sharp,ls0xx";
-		label = "DISPLAY";
-		spi-max-frequency = <125000>;
-		reg = <0>;
-		width = <160>;
-		height = <68>;
-	};
 };
 
 &pro_micro_i2c {
@@ -50,6 +39,5 @@ nice_view_spi: &spi0 {
 / {
 	chosen {
 		zmk,underglow = &led_strip;
-		zephyr,display = &nice_view;
 	};
 };

@@ -1,10 +1,8 @@
 #include <dt-bindings/led/led.h>
 
-nice_view_spi: &spi0 {
-	compatible = "nordic,nrf-spim";
-	sck-pin = <20>;
+
+&nice_view_spi{
 	mosi-pin = <22>;
-	miso-pin = <25>;
 	cs-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
 };
 
