@@ -62,10 +62,10 @@
 
 		fun_layer {
 			bindings = <
-	&kp C_NEXT		&kp F7		&kp F8		&kp F9		&kp F10												&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_CLR
-	&mt LALT C_PP	&kp F4		&kp F5		&kp F6		&kp F11												&rgb_ug RGB_EFF	&rgb_ug RGB_SPD &rgb_ug RGB_SPI	&rgb_ug RGB_HUD	&rgb_ug RGB_HUI
-	&kp C_PREV		&kp F1		&kp F2		&kp F3		&kp F12												&rgb_ug RGB_TOG	&rgb_ug RGB_BRD	&rgb_ug RGB_BRI	&rgb_ug RGB_SAD	&rgb_ug RGB_SAI
-	&kp C_MUTE		&kp LWIN	&bootloader	&reset		&lt num_L TAB	&mo fun_L				&mo fun_L	&lt sym_L BSPC	&reset			&bootloader		&kp RWIN		&kp LA(F4)
+	&kp C_NEXT		&kp F7			&kp F8		&kp F9		&kp F10												&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_CLR
+	&mt LALT C_PP	&kp F4			&kp F5		&kp F6		&kp F11												&rgb_ug RGB_EFF	&rgb_ug RGB_SPD &rgb_ug RGB_SPI	&rgb_ug RGB_HUD	&rgb_ug RGB_HUI
+	&kp C_PREV		&kp F1			&kp F2		&kp F3		&kp F12												&rgb_ug RGB_TOG	&rgb_ug RGB_BRD	&rgb_ug RGB_BRI	&rgb_ug RGB_SAD	&rgb_ug RGB_SAI
+	&kp C_MUTE		&rgb_ug RGB_TOG	&bootloader	&reset		&lt num_L TAB	&mo fun_L				&mo fun_L	&lt sym_L BSPC	&reset			&bootloader		&kp RWIN		&kp LA(F4)
 			>;
 
 			// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
