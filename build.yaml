@@ -15,5 +15,5 @@
 include:
   - board: nice_nano_v2
     shield: heartbreak_left
-  # - board: nice_nano_v2
-  #   shield: heartbreak_right
+  - board: nice_nano_v2
+    shield: heartbreak_right
