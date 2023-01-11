@@ -23,8 +23,8 @@
 	&kp Z			&kp X		&kp C		&kp D		&kp V														&kp K			&kp H			&kp COMMA		&kp DOT			&kp FSLH
 	&kp C_MUTE		&kp LWIN	&kp LCTRL	&kp SPACE	&lt num_L TAB	&lt fun_L ESC			&lt fun_L LA(FSLH)	&lt sym_L RET	&mt LSHIFT BSPC	&mt LALT DEL	&kp RWIN		&kp LA(F4)
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
+    		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
 		};
 
 		qwerty_layer {
@@ -34,8 +34,8 @@
 	&kp Z			&kp X		&kp C		&kp V		&kp B														&kp N			&kp M			&kp COMMA		&kp DOT			&kp FSLH
 	&trans			&trans		&trans		&trans		&trans			&trans					&trans				&trans			&trans			&trans			&trans			&trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
+    		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
 		};
 
 		num_layer {
@@ -45,8 +45,8 @@
 	&mt LCTRL RET	&kp N1		&kp N2		&kp N3		&kp N0														&trans			&kp TILDE		&kp STAR		&kp CARET		&kp BSLH
 	&trans			&trans		&trans		&trans		&trans			&trans					&trans				&trans			&trans			&trans			&trans			&trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
+    		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
 		};
 
 		sym_layer {
@@ -56,8 +56,8 @@
 	&kp HASH		&kp LBRC	&kp RBRC	&kp UNDER	&trans														&trans			&kp PSCRN		&kp DOWN		&kp PAUSE_BREAK	&kp SLCK
 	&trans			&trans		&trans		&trans		&trans			&trans					&trans				&trans			&trans			&trans			&trans			&trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
+    		sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
+			// sensor-bindings = <&inc_dec_kp TAB LS(TAB) &inc_dec_kp TAB LS(TAB)>;
 		};
 
 		fun_layer {
@@ -67,8 +67,8 @@
 	&kp C_PREV		&kp F1		&kp F2		&kp F3		&kp F12														&rgb_ug RGB_TOG	&rgb_ug RGB_BRD	&rgb_ug RGB_BRI	&rgb_ug RGB_SAD	&rgb_ug RGB_SAI
 	&trans			&trans    	&bootloader	&reset		&trans			&trans					&trans	 			&trans			&reset			&bootloader		&tog qwe_L		&trans
 			>;
-
-			ensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
+    		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp TAB LS(TAB)>;
 		};	
 	};
 };
