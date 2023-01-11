@@ -51,9 +51,9 @@
 
 		sym_layer {
 			bindings = <
-	&kp DLLR		&kp LBKT	&kp RBKT	&kp AMPS	&trans														&trans			&kp HOME		&kp K_MENU		&kp END			&kp PG_UP
-	&mt LSHIFT AT	&kp LPAR	&kp RPAR	&kp PIPE	&trans														&trans			&kp LEFT		&kp UP			&kp RIGHT		&mt LALT PG_DN
-	&kp HASH		&kp LBRC	&kp RBRC	&kp UNDER	&trans														&trans			&kp PSCRN		&kp DOWN		&kp PAUSE_BREAK	&kp SLCK
+	&kp DLLR		&kp LBKT	&kp RBKT	&kp AMPS	&trans														&trans			&kp HOME		&kp UP			&kp END			&kp PG_UP
+	&mt LSHIFT AT	&kp LPAR	&kp RPAR	&kp PIPE	&trans														&trans			&kp LEFT		&kp DOWN		&kp RIGHT		&mt LALT PG_DN
+	&kp HASH		&kp LBRC	&kp RBRC	&kp UNDER	&trans														&trans			&kp PSCRN		&kp K_MENU		&kp PAUSE_BREAK	&kp SLCK
 	&trans			&trans		&trans		&trans		&trans			&trans					&trans				&trans			&trans			&trans			&trans			&trans
 			>;
     		sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
