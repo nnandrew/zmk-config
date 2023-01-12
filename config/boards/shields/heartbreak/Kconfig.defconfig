@@ -57,6 +57,24 @@ choice LVGL_COLOR_DEPTH
 	default LVGL_COLOR_DEPTH_1
 endchoice
 
+menuconfig HEARTBREAK_BONGO_CAT
+    bool "Show WPM bongo cat"
+    select ZMK_WPM
+    select LVGL_USE_IMG
+    select LVGL_USE_ANIMATION
+
+if HEARTBREAK_BONGO_CAT
+
+config HEARTBREAK_BONGO_CAT_IDLE_LIMIT
+    int "Upper limit for WPM for showing idle animation"
+    default 30
+
+config HEARTBREAK_BONGO_CAT_SLOW_LIMIT
+    int "Upper limit for WPM for showing slow typing image"
+    default 60
+
+endif # HEARTBREAK_BONGO_CAT
+
 endif # ZMK_DISPLAY
 
 endif # SHIELD_HEARTBREAK_LEFT || SHIELD_HEARTBREAK_RIGHT
