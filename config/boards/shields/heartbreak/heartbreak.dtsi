@@ -23,15 +23,13 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)										 RC(2,7) RC(2,8) RC(2,9) RC(2,1
 		RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,0)		RC(3,11) RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10)
 		>;
 	};
-
-	left_encoder: left_encoder {
+	left_encoder: encoder_left {
 		compatible = "alps,ec11";
 		label = "LEFT_ENCODER";
-		a-gpios = <&gpio1 13 GPIO_PULL_UP>;
-		b-gpios = <&gpio1 15 GPIO_PULL_UP>;
+		a-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <4>;
 	};
-
 	// right_encoder: right_encoder {
 	// 	compatible = "alps,ec11";
 	// 	label = "RIGHT_ENCODER";
@@ -39,11 +37,8 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)										 RC(2,7) RC(2,8) RC(2,9) RC(2,1
 	// 	b-gpios = <&gpio1  4 GPIO_PULL_UP>;
 	// 	resolution = <4>;
 	// };
-
 	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&left_encoder>;
-		// sensors = <&left_encoder &right_encoder>;
 	};
-
 };
