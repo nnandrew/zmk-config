@@ -40,9 +40,9 @@
 
 		num_layer {
 			bindings = <
-	&mt LWIN DEL	&kp N7		&kp N8		&kp N9		&kp LS(TAB)													&trans			&kp GRAVE		&kp LT			&kp GT			&kp P
-	&mt LALT BSPC	&kp N4		&kp N5		&kp N6		&kp TAB														&trans			&kp EQUAL		&kp PLUS		&kp MINUS		&kp SEMI
-	&mt LCTRL RET	&kp N1		&kp N2		&kp N3		&kp N0														&trans			&kp TILDE		&kp STAR		&kp CARET		&kp BSLH
+	&mt LWIN DEL	&kp N7		&kp N8		&kp N9		&kp DOT														&trans			&kp GRAVE		&kp STAR		&kp CARET		&kp PRCNT
+	&mt LALT BSPC	&kp N4		&kp N5		&kp N6		&kp TAB														&trans			&kp EQUAL		&kp PLUS		&kp MINUS		&kp EXCL
+	&mt LCTRL RET	&kp N1		&kp N2		&kp N3		&kp N0														&trans			&kp TILDE		&kp SQT			&kp DQT			&kp BSLH
 	&trans			&trans		&trans		&trans		&trans			&trans					&trans				&trans			&trans			&trans			&trans			&trans
 			>;
     		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
